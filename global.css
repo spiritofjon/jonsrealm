@@ -1,0 +1,71 @@
+<html>
+
+/* Link colors */
+A {text-decoration: none;} 
+A:link {text-decoration: none; color: red}
+A:visited {text-decoration: none; color: blue}
+A:active {text-decoration: none; color: black}
+A:hover {text-decoration: none; color: green}
+
+/* Navigation Link colors */
+A.menulink {display: block;width: 100px;text-align: center;text-decoration: none;font-family:arial;color: #ff0000;BORDER: none;border: none;}
+A.menulink:hover {color:#ff0000; background-color:yellow;}
+A.menulink:visited {color:#ff0000;}
+A.menulink:active {color:#0000ff;}
+
+/* Normal Global Conditions */
+BODY {background-color: #bebebe; background-image: url(backgrounds/bgs02.gif); background-attachment: fixed; line-height: 13pt; color: black; font-size: 12pt; font-family: sans-serif; scrollbar-face-color: blue; scrollbar-shadow-color: white; scrollbar-highlight-color: white; scrollbar-3dlight-color: red; scrollbar-darkshadow-color: red; scrollbar-arrow-color: white;}
+
+/* Stars Global Conditions */
+BODY.stars {background-color: #bebebe; background-image: url(backgrounds/bgs03.gif); background-attachment: fixed; line-height: 14pt; color: black; font-size: 12pt; font-family: sans-serif; scrollbar-face-color: blue; scrollbar-shadow-color: white; scrollbar-highlight-color: white; scrollbar-3dlight-color: red; scrollbar-darkshadow-color: red; scrollbar-arrow-color: white; cursor:url("backgrounds/cursor01.cur")}
+
+/* No Pic Global Conditions */
+BODY.nopic {background-color: #bebebe; background-image: url(); background-attachment: fixed; line-height: 14pt; color: black; font-size: 12pt; font-family: sans-serif; scrollbar-face-color: blue; scrollbar-shadow-color: white; scrollbar-highlight-color: white; scrollbar-3dlight-color: red; scrollbar-darkshadow-color: red; scrollbar-arrow-color: white; cursor:url("backgrounds/cursor01.cur")}
+
+/* Table Background */
+.subtable {background-color: #eee8aa; background-image: url()}
+
+
+/* Table Cell Spacer */
+.spacer {background-color: #000000; background-image: url(backgrounds/bgs02.gif)}
+
+/* Table Border */
+.maintable {background-color: red}
+
+/* Blue Title Text */
+P.header1 {color: blue; text-align: center; line-height: 24pt; font-style: italic; font-size: 26pt; font-family: "comic sans ms", sans-serif;}
+
+/* Red Title Text */
+P.header2 {color: red; text-align: center; line-height: 24pt; font-style: italic; font-size: 26pt; font-family: "comic sans ms", sans-serif;}
+
+/* Purple Title Text */
+P.header3 {color: purple; text-align: center; line-height: 24pt; font-style: italic; font-size: 26pt; font-family: "comic sans ms", sans-serif;}
+
+/* Blue Title Text */
+P.update {color: blue; text-align: center; line-height: 18pt; font-style: italic; font-size: 20pt; font-family: "comic sans ms", sans-serif;}
+
+.heading {font-size: 16pt; font-family: "comic sans ms", sans-serif}
+
+.heading02 {font-size: 12pt; font-family: "comic sans ms", sans-serif}
+
+.heading03 {font-size: 14pt; font-family: "comic sans ms", sans-serif}
+
+.home {line-height: 9pt; font-size: 14pt; font-family: "comic sans ms", sans-serif}
+
+/* Indent */
+.indent {text-indent: 12pt}
+
+/* Highlight properties */
+.yellow {color: #ffff00}
+.green {color: #00ff00}
+.red {color: #ff0000}
+.blue {color: #0000ff}
+.ltblue {color: #00ffff}
+.purple3 {color: #660099}
+.purple2 {color: #9933FF}
+.white {color: #ffffff}
+.black {color: #000000}
+.purple {color: #6600CC}
+.green2 {color: #009900}
+
+</html>

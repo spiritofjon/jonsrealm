@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1"><meta name="copyright" content="Copyright © 1998-2005 by J.M. Kingsley. All rights reserved."><title></title><LINK REL=StyleSheet HREF="../../global.css" TYPE="text/css" TITLE="Contemporary"><LINK REL=StyleSheet HREF="../../tooltip.css" TYPE="text/css" TITLE="Contemporary"></head><body background="backgrounds/bgs02.gif" bgcolor="#bebebe" text="purple" link="#ff0000" vlink="purple" alink="#ffff00"><!--Right Click Disable--><script language=JavaScript src="../../scripts/noclick.js" type="text/javascript"></script><!--No Select--><script language=JavaScript src="../../scripts/noselect.js" type="text/javascript"></script><center>
+
+<!--Page Title-->
+<p class=header1>HTML Code Tips</p>
+
+<p><!--Lists-->
+<table summary="" bgcolor=red BORDER="0" CELLSPACING="0" CELLPADDING="1" width="90%">
+<TR><TD valign=middle align=center>
+<table summary="" bgcolor=white BORDER="0" CELLSPACING="0" CELLPADDING="1" WIDTH="100%">
+<TR><TD valign=middle align=center>
+<table summary="" bgcolor=blue BORDER="0" CELLSPACING="0" CELLPADDING="1" WIDTH="100%">
+<TR><TD valign=middle align=center>
+<table summary="" CLASS="SUBTABLE" BORDER="0" CELLSPACING="0" CELLPADDING="8" WIDTH="100%">
+<TR><TD valign=middle>
+<p class=heading><font color=green>Lists</font></p>
+
+<!--Ordered lists-->
+<p><u><b>Ordered Lists</b></u></p>
+<p class=indent>Ordered lists are often called numbered lists. 
+In an ordered list <font class=blue>&lt;OL&gt;</font> is used to open the list and <font class=blue>&lt;/OL&gt;</font> to close the list. The code layout is as follows:
+<br>
+<center>
+<table><tr><td>
+<font class=blue>&lt;OL&gt;<br>
+&lt;LH&gt;</font>Header (optional)<font class=blue>&lt;/LH&gt;<br>
+&lt;LI&gt;</font>First list item<font class=blue>&lt;/LI&gt;<br>
+&lt;LI&gt;</font>Second list item<font class=blue>&lt;/LI&gt;<br>
+&lt;LI&gt;</font>Third list item<font class=blue>&lt;/LI&gt;<br>
+&lt;/OL&gt;</font>
+</td></tr></table>
+</center>
+<p>This is what an ordered list looks like:
+<ol>
+<lh>Shopping List</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ol>
+<p class=indent>Ordered lists have five options for numbering. Ordered lists by default use regular numbers. By adding the <nobr><font class=blue>type="XX"</font></nobr> tag to the  <font class=blue>&lt;OL&gt;</font> command you can change these options. The other four options are as follows: 
+<center>
+<table summary="" border="1" CELLSPACING="0" CELLPADDING="8">
+<tr><td valign=middle width="50%">
+<p align=center><font class=blue>&lt;OL type="A"&gt;</font>
+<ol type="A">
+<lh>Capital Letters</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ol>
+</td><td valign=middle width="50%">
+<p align=center><font class=blue>&lt;OL type="a"&gt;</font>
+<ol type="a">
+<lh>Lowercase Letters</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ol>
+</td></tr>
+<tr><td valign=middle width="50%">
+<p align=center><font class=blue>&lt;OL type="I"&gt;</font>
+<ol type="I">
+<lh>Capital Roman Numerals</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ol>
+</td><td valign=middle width="50%">
+<p align=center><font class=blue>&lt;OL type="i"&gt;</font>
+<ol type="i">
+<lh>Lowercase Roman Numerals</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ol>
+</td></tr>
+</table>
+</center>
+
+<br><br>
+
+<!--Unordered lists-->
+<p><u><b>Unordered Lists</b></u></p>
+<p class=indent>Unordered lists are often called bulleted lists, because of their use of bullets instead of letters or numbers. Unordered lists use <font class=blue>&lt;UL&gt;&lt;/UL&gt;</font> to open and close the list.</p>
+<p class=indent>Unordered lists have three bullet options. Unordered lists by default use the round bullet. The three options are as follows: 
+<center>
+<table summary="" border="1" CELLSPACING="0" CELLPADDING="8">
+<tr><td valign=middle width="33%">
+<p align=center><nobr><font class=blue>&lt;UL&gt;</font></nobr>
+<ul>
+<lh>Default Bullets</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ul>
+</td><td valign=middle width="33%">
+<p align=center><nobr><font class=blue>&lt;UL type="square"&gt;</font></nobr>
+<ul type="square">
+<lh>Square Bullets</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ul>
+</td><td valign=middle width="33%">
+<p align=center><nobr><font class=blue>&lt;UL type="circle"&gt;</font></nobr>
+<ul type="circle">
+<lh>Circle Bullets</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ul>
+</td></tr>
+</table>
+</center>
+<p class=indent>With unordered lists you can also use your own image as a bullet instead of the standard bullets. In order to accomplish this however, you have to use some code from Cascading Style Sheets. I won't get into the details of CSS, however, it is a great coding script that adds alot of function and detail to websites. Which is why I use it heavily in this site.
+<p>In order to use your own graphic you need to add this <nobr><font class=blue>STYLE="list-style-image: url(1234.gif)"</font></nobr> tag to the  <font class=blue>&lt;UL&gt;</font> command. Replace <font class=blue>1234.gif</font> with the location of your graphic file. Here is an example of what this looks like
+<ul STYLE="list-style-image: url(../../graphics/bullet014.gif)">
+<lh>My own bullet</lh>
+<li>Apples</li>
+<li>Milk</li>
+<li>Bread</li>
+</ul>
+
+<br><br>
+
+<!--Definition list-->
+<p><u><b>Definition Lists</b></u></p>
+<p class=indent>Definition lists differ from both ordered and unordered lists in that this list is divided into two parts: the term and the definition. Definition lists use <font class=blue>&lt;DL&gt;&lt;/DL&gt;</font> to open and close the list. The term is enclosed in the commands <font class=blue>&lt;DT&gt;&lt;/DT&gt;</font>. The definition is enclosed in the <font class=blue>&lt;DD&gt;&lt;/DD&gt;</font> tags. It's also possible to add a list header.</p>
+<p>Definition list format: 
+<br>
+<font class=blue>&lt;DL&gt;<br>
+&lt;LH&gt;</font>Header<font class=blue>&lt;/LH&gt;<br>
+&lt;DT&gt;</font>Term<font class=blue>&lt;/DT&gt;&lt;DD&gt;</font>Definition<font class=blue>&lt;/DD&gt;<br>
+&lt;DT&gt;</font>Term<font class=blue>&lt;/DT&gt;&lt;DD&gt;</font>Definition<font class=blue> &lt;/DD&gt;<br>
+&lt;/DL&gt;</font>
+<p>Definition list example: 
+<dl>
+<dt>In what city was I Born?</dt><dd>I was born in Portland, Oregon.</dd>
+<dt>What year was I born?</dt><dd>I was born in the year 1977.</dd>
+</dl>
+
+<br><br>
+
+<!--Nested list-->
+<p><u><b>Nested Lists</b></u></p>
+<font class=blue>&lt;UL&gt;<br>
+&lt;LI&gt;</font>You can have a list.<font class=blue>&lt;/LI&gt;<br>
+&lt;OL&gt;<br>
+&lt;LI&gt;</font>Inside of another list.<font class=blue>&lt;/LI&gt;<br>
+&lt;OL&gt;<br>
+&lt;LI&gt;</font>Inside of again another list.<font class=blue>&lt;/LI&gt;<br>
+&lt;/OL&gt;<br>
+&lt;/OL&gt;<br>
+&lt;/UL&gt;</font>
+<p>Which looks like this:
+<ul><li>You can have a list.</li>
+<ol><li>Inside of another list.</li>
+<ol><li>Inside of again another list.</li>
+</ol></ol></ul>
+</TD></TR></TABLE>
+</TD></TR></TABLE>
+</TD></TR></TABLE>
+</TD></TR></TABLE>
+
+</center></body></html>

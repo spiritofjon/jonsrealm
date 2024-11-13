@@ -1,0 +1,9 @@
+#dropmenudiv{position:absolute;border:1px solid black;border-bottom-width: 0;font:normal 12px arial;line-height:14px;z-index:100;}
+
+#dropmenudiv a{width: 100%;display: block;text-indent: 2px;text-align: center;border-bottom: 1px solid black;padding: 2px 0;text-decoration: none;font-weight: none;}
+
+#dropmenudiv a:hover{color:#ff0000; background-color:yellow;}
+
+#dropmenudiv a:visited {color:#ff0000;}
+
+#dropmenudiv a:active {color:#0000ff;}

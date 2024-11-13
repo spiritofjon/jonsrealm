@@ -1,0 +1,22 @@
+
+<form name="f">
+<table border="0" cellpadding="0" border="0"><tr><td>
+<table cellspacing="0" cellpadding="8" border="0">
+<tr><td colspan="6" align="center">Simply enter a number in the first text box, select unit, and then select unit to convert to.<br>Your Answer will appear in the second text box.</td></tr>
+<script language="javascript">
+var t='';
+for(i=0;i<units.length;i++){
+t+='<tr><td colspan="6"><hr width="100%" color="black"><font size="+2">'+units[i]+'</font></td></tr>';
+t+='<tr><td><input type="text" value="1" name="t1'+units[i]+'" size="5" onChange="convert('+i+')"></td><td>';
+t+='<select name="s1'+units[i]+'" onChange="convert('+i+')">';
+for(j=0;j<eval(units[i]+'.length');j++)t+='<option>'+eval(units[i]+'['+j+'][0]')+'</option>';
+t+='</select></td><td align="center">To</td><td>';
+t+='<select name="s2'+units[i]+'" onChange="convert('+i+')">';
+for(j=0;j<eval(units[i]+'.length');j++)t+='<option>'+eval(units[i]+'['+j+'][0]')+'</option>';
+t+='</select></td><td>=</td>';
+t+='<td><input type="text" readonly value="1" name="t2'+units[i]+'" size="14">';
+t+='</td></tr>';
+}
+document.write(t);
+</script>
+</table></td></tr></table></form>

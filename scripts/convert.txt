@@ -1,0 +1,36 @@
+
+<form name="tempConvert">
+<table cellpadding="0" cellspacing="0" border="0"><tr><td>
+<table cellpadding="8" cellspacing="0" border="0">
+<tr valign="bottom" align="center">
+<td>
+Enter<br>temperature<br><br>
+<input type="text" name="intemp" size="11" value=0>
+</td><td>
+Convert <i>from</i>.<br><br>
+<select name="fromU">
+<option>° Celcius</option>
+<option>° Fahrenheit</option>
+<option>° Rankin</option>
+<option>Kelvin</option>
+</select>
+</td>
+<td><input type="button" value=" Convert ->" onclick="convertTemp()"></td>
+<td>
+Convert <i>to</i>.<br><br>
+<select name="toU">
+<option>° Celcius</option>
+<option>° Fahrenheit</option>
+<option>° Rankin</option>
+<option>Kelvin</option>
+</select>
+</td><td>
+Answer:<br><br><br>
+<input type="text" name="outtemp" size="11">
+</td></tr>
+<tr align="center">
+<td colspan="5">
+<input type="reset" value=" Reset ">
+</td></tr></table>
+</td></tr></table>
+</form>
